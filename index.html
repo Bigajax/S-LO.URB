@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SÖLO URB — Curadoria urbana. Marcas globais.</title>
+  <meta name="description" content="Concept store urbana com curadoria de sneakers, streetwear, relógios e acessórios. New Balance, Puma, Lacoste, Converse, Columbia, Deus Ex Machina, Casio e G-Shock. De Maringá para todo o Brasil.">
+  <link rel="icon" type="image/jpeg" href="assets/brand/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Archivo:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="topo" id="topo">
+    <button class="topo__menu" type="button" aria-expanded="false" aria-controls="nav-mobile" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a class="topo__marca" href="#topo" aria-label="SÖLO URB — início">
+      <img src="assets/brand/logo.jpg" alt="" width="42" height="42">
+      <span class="topo__nome">SÖLO<em>URB.</em></span>
+    </a>
+
+    <nav class="topo__nav" aria-label="Navegação principal">
+      <div class="topo__item">
+        <a href="#lancamentos" class="tem-seta">Novidades</a>
+        <div class="submenu">
+          <a href="#lancamentos">Chegou agora</a>
+          <a href="#maisvendidos">Mais vendidos</a>
+          <a href="#selecao">Seleção Sölo</a>
+        </div>
+      </div>
+      <div class="topo__item">
+        <a href="#lancamentos" class="tem-seta">Masculino</a>
+        <div class="submenu submenu--mega">
+          <div class="submenu__links">
+            <a href="#lancamentos">Tênis</a>
+            <a href="#maisvendidos">Roupas</a>
+            <a href="#relogios">Relógios</a>
+            <a href="#maisvendidos">Acessórios</a>
+          </div>
+          <a class="submenu__foto" href="#lancamentos">
+            <img src="assets/img/hero-nb9060.jpg" alt="">
+            <span>Tênis masculinos</span>
+          </a>
+          <a class="submenu__foto" href="#maisvendidos">
+            <img src="assets/img/deus-hoodie.jpg" alt="">
+            <span>Streetwear masculino</span>
+          </a>
+        </div>
+      </div>
+      <div class="topo__item">
+        <a href="#lancamentos" class="tem-seta">Feminino</a>
+        <div class="submenu submenu--mega">
+          <div class="submenu__links">
+            <a href="#lancamentos">Tênis</a>
+            <a href="#maisvendidos">Roupas</a>
+            <a href="#relogios">Relógios</a>
+            <a href="#maisvendidos">Acessórios</a>
+          </div>
+          <a class="submenu__foto" href="#lancamentos">
+            <img src="assets/img/nb-purple.jpg" alt="">
+            <span>Tênis femininos</span>
+          </a>
+          <a class="submenu__foto" href="#relogios">
+            <img src="assets/img/wrists-duo.jpg" alt="">
+            <span>Relógios femininos</span>
+          </a>
+        </div>
+      </div>
+      <div class="topo__item">
+        <a href="#marcas" class="tem-seta">Marcas</a>
+        <div class="submenu">
+          <a href="#marcas">New Balance</a>
+          <a href="#marcas">Puma</a>
+          <a href="#marcas">Lacoste</a>
+          <a href="#marcas">Converse</a>
+          <a href="#marcas">Columbia</a>
+          <a href="#marcas">Deus Ex Machina</a>
+          <a href="#marcas">Casio</a>
+          <a href="#marcas">G-Shock</a>
+        </div>
+      </div>
+      <a href="#relogios">Relógios</a>
+      <a class="topo__sale" href="#sale">Sale</a>
+    </nav>
+
+    <div class="topo__acoes">
+      <button type="button" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m15.6 15.6 4.9 4.9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <button type="button" aria-label="Minha conta" class="topo__conta">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 20c1.4-3.4 4.2-5 7.5-5s6.1 1.6 7.5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <button type="button" aria-label="Favoritos" class="topo__fav">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="topo__badge" data-fav-count hidden>0</span>
+      </button>
+      <button type="button" aria-label="Sacola" class="topo__sacola">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        <span class="topo__badge" data-cart-count hidden>0</span>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Menu" hidden>
+      <a href="#lancamentos">Novidades</a>
+      <a href="#lancamentos">Masculino</a>
+      <a href="#lancamentos">Feminino</a>
+      <a href="#marcas">Marcas</a>
+      <a href="#relogios">Relógios</a>
+      <a class="nav-mobile__sale" href="#sale">Sale</a>
+      <a href="#" data-abrir-favoritos>Favoritos</a>
+      <p class="nav-mobile__nota">Lojas em Maringá, PR<br>Av. Herval, 128 · Av. Tiradentes, 858</p>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero: a vitrine -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="hero__luz" aria-hidden="true"></div>
+      <div class="hero__texto">
+        <p class="etiqueta etiqueta--clara">SÖLO.URB · MARINGÁ → BRASIL</p>
+        <h1 id="hero-titulo">As marcas que<br>você procura.<br>A curadoria que<br>só a <span class="hero__solo">Sölo</span> faz<span class="ponto">.</span></h1>
+        <div class="hero__ctas">
+          <a class="botao botao--primario" href="#lancamentos">Comprar novidades</a>
+          <a class="hero__link" href="#lojas">Conhecer a Sölo →</a>
+        </div>
+      </div>
+      <div class="hero__vitrine" aria-hidden="true">
+        <figure class="vitrine">
+          <img src="assets/img/hero-nb9060.jpg" alt="" width="353" height="426" fetchpriority="high">
+          <figcaption class="vitrine__tag">
+            <span>New Balance 9060</span>
+            <strong>R$ 1.299</strong>
+          </figcaption>
+        </figure>
+        <figure class="vitrine vitrine--b">
+          <img src="assets/img/watch-green-dark.jpg" alt="" width="353" height="426" loading="lazy">
+          <figcaption class="vitrine__tag">
+            <span>Casio Duro Marlin</span>
+            <strong>R$ 499</strong>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="hero__ticker" aria-label="Marcas disponíveis na Sölo">
+        <div class="ticker__faixa">
+          <img src="assets/brand/logos/newbalance.svg" alt="New Balance"><img src="assets/brand/logos/puma.svg" alt="Puma"><img src="assets/brand/logos/lacoste.svg" alt="Lacoste"><img src="assets/brand/logos/converse.svg" alt="Converse"><img src="assets/brand/logos/columbia.svg" alt="Columbia"><span class="ticker__deus" aria-label="Deus Ex Machina">Deus Ex Machina</span><img src="assets/brand/logos/casio.svg" alt="Casio"><img src="assets/brand/logos/gshock.svg" alt="G-Shock"><img src="assets/brand/logos/vans.svg" alt="Vans">
+          <img src="assets/brand/logos/newbalance.svg" alt=""><img src="assets/brand/logos/puma.svg" alt=""><img src="assets/brand/logos/lacoste.svg" alt=""><img src="assets/brand/logos/converse.svg" alt=""><img src="assets/brand/logos/columbia.svg" alt=""><span class="ticker__deus" aria-hidden="true">Deus Ex Machina</span><img src="assets/brand/logos/casio.svg" alt=""><img src="assets/brand/logos/gshock.svg" alt=""><img src="assets/brand/logos/vans.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="categorias revela" aria-labelledby="cat-titulo">
+      <header class="secao__cab">
+        <p class="etiqueta">SÖLO.URB · POR ONDE COMEÇAR</p>
+        <h2 id="cat-titulo">Escolha a sua pista</h2>
+      </header>
+      <div class="categorias__grade">
+        <a class="cat cat--tenis" href="#lancamentos">
+          <img src="assets/img/nb9060-tan-pair.jpg" alt="Par de New Balance 9060 em tons de areia" loading="lazy">
+          <span class="cat__rotulo">Tênis</span>
+        </a>
+        <a class="cat" href="#maisvendidos">
+          <img src="assets/img/columbia-back.jpg" alt="Corta-vento Columbia azul e amarelo visto de costas" loading="lazy">
+          <span class="cat__rotulo">Roupas</span>
+        </a>
+        <a class="cat" href="#relogios">
+          <img src="assets/img/gshock-trio.jpg" alt="Três relógios G-Shock de aço" loading="lazy">
+          <span class="cat__rotulo">Relógios</span>
+        </a>
+        <a class="cat" href="#maisvendidos">
+          <img src="assets/img/gold-casios.jpg" alt="Relógios Casio dourados sobre tecido amarelo" loading="lazy">
+          <span class="cat__rotulo">Acessórios</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Lançamentos -->
+    <section class="lancamentos revela" id="lancamentos" aria-labelledby="lanc-titulo">
+      <header class="secao__cab secao__cab--rail">
+        <div>
+          <p class="etiqueta">SÖLO.URB · ACABOU DE CHEGAR</p>
+          <h2 id="lanc-titulo">Chegou agora<i class="ponto">.</i></h2>
+        </div>
+        <div class="rail__setas">
+          <button type="button" data-rail-prev aria-label="Anteriores">←</button>
+          <button type="button" data-rail-next aria-label="Próximos">→</button>
+        </div>
+      </header>
+      <div class="rail" id="rail-lancamentos" tabindex="0" aria-label="Lançamentos"></div>
+    </section>
+
+    <!-- Seleção Sölo -->
+    <section class="selecao revela" id="selecao" aria-labelledby="sel-titulo">
+      <header class="secao__cab">
+        <p class="etiqueta etiqueta--clara">SÖLO.URB · CURADORIA</p>
+        <h2 id="sel-titulo">Escolhidos pela Sölo</h2>
+        <p class="secao__sub">O que estamos usando, acompanhando e recomendando agora. Marcas atraem. A seleção é nossa.</p>
+      </header>
+      <div class="selecao__mosaico">
+        <figure class="sel sel--a"><img src="assets/img/nb-balloon.jpg" alt="New Balance 530 prata no pé, com balão vermelho ao fundo" loading="lazy"><figcaption>530 no pé — o clássico do momento</figcaption></figure>
+        <figure class="sel sel--b"><img src="assets/img/watch-green-fabric.jpg" alt="Casio Duro com mostrador verde sobre tecido verde" loading="lazy"><figcaption>Duro Marlin — o mergulhador de entrada</figcaption></figure>
+        <figure class="sel sel--c"><img src="assets/img/deus-reddoor.jpg" alt="Jaqueta Deus Ex Machina preta diante de porta vermelha" loading="lazy"><figcaption>Deus Ex Machina — oficina e rua</figcaption></figure>
+        <figure class="sel sel--d"><img src="assets/img/sneaker-pink.jpg" alt="Tênis branco sobre tecido rosa" loading="lazy"><figcaption>Branco total — atravessa temporadas</figcaption></figure>
+        <figure class="sel sel--e"><img src="assets/img/gold-pair-watches.jpg" alt="Relógios Casio dourado e azul em expositor" loading="lazy"><figcaption>Aço e ouro — pulso em primeiro plano</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Campanha editorial: empena imersiva -->
+    <section class="empena" aria-labelledby="camp-titulo">
+      <div class="empena__fundo" data-parallax aria-hidden="true"></div>
+      <div class="empena__marquee" aria-hidden="true">
+        <span>9060&nbsp;&nbsp;●&nbsp;&nbsp;9060&nbsp;&nbsp;●&nbsp;&nbsp;9060&nbsp;&nbsp;●&nbsp;&nbsp;9060&nbsp;&nbsp;●&nbsp;&nbsp;9060&nbsp;&nbsp;●&nbsp;&nbsp;9060&nbsp;&nbsp;●&nbsp;&nbsp;</span><span>9060&nbsp;&nbsp;●&nbsp;&nbsp;9060&nbsp;&nbsp;●&nbsp;&nbsp;9060&nbsp;&nbsp;●&nbsp;&nbsp;9060&nbsp;&nbsp;●&nbsp;&nbsp;9060&nbsp;&nbsp;●&nbsp;&nbsp;9060&nbsp;&nbsp;●&nbsp;&nbsp;</span>
+      </div>
+      <div class="empena__conteudo revela">
+        <p class="etiqueta etiqueta--clara">SÖLO.URB · 9060</p>
+        <h2 id="camp-titulo">A cidade é<br>a vitrine</h2>
+        <p>O 9060 saiu do arquivo da New Balance e tomou a paisagem. Numeração completa na Sölo, na loja e no site.</p>
+        <a class="botao botao--claro" href="#lancamentos">Ver New Balance</a>
+      </div>
+    </section>
+
+    <!-- Mais vendidos -->
+    <section class="maisvendidos revela" id="maisvendidos" aria-labelledby="mv-titulo">
+      <header class="secao__cab">
+        <p class="etiqueta">SÖLO.URB · O QUE MAIS SAI</p>
+        <h2 id="mv-titulo">Mais vendidos</h2>
+        <p class="secao__sub">Últimas unidades. Depois, só na próxima reposição.</p>
+      </header>
+      <div class="grade" id="grade-maisvendidos"></div>
+    </section>
+
+    <!-- Sale -->
+    <section class="sale revela" id="sale" aria-labelledby="sale-titulo">
+      <figure class="sale__poster">
+        <img src="assets/img/sale-red.jpg" alt="Cartaz vermelho da campanha SÖLO SALE" loading="lazy">
+      </figure>
+      <div class="sale__texto">
+        <p class="etiqueta etiqueta--sale">SÖLO.URB · ATÉ 50% OFF</p>
+        <h2 id="sale-titulo">Sölo Sale</h2>
+        <p class="sale__oferta"><strong>30, 40 e 50% off</strong> em tênis selecionados<br><strong>40% off</strong> em toda a confecção</p>
+        <p>Descontos válidos para pagamentos à vista, na loja e no site.</p>
+        <a class="botao botao--claro" href="#lancamentos">Ver ofertas</a>
+      </div>
+
+      <div class="sale__promos">
+        <p class="sale__promos-titulo">Garimpos da semana · tamanhos limitados · direto do estoque</p>
+        <div class="sale__promos-grade">
+          <article class="cupom">
+            <p class="cupom__stamp">Sölo Sale</p>
+            <h3>Sneaker off-white</h3>
+            <p class="cupom__de">de R$ 666,56 por</p>
+            <p class="cupom__por">R$ 399,93</p>
+            <p class="cupom__tam">34 ao 38</p>
+          </article>
+          <article class="cupom">
+            <p class="cupom__stamp">Sölo Sale</p>
+            <h3>All Star Hi preto</h3>
+            <p class="cupom__de">de R$ 477,67 por</p>
+            <p class="cupom__por">R$ 286,60</p>
+            <p class="cupom__tam">33 · 34 · 39 · 42</p>
+          </article>
+          <article class="cupom">
+            <p class="cupom__stamp">Sölo Sale</p>
+            <h3>All Star Hi bordado</h3>
+            <p class="cupom__de">de R$ 588,78 por</p>
+            <p class="cupom__por">R$ 353,26</p>
+            <p class="cupom__tam">só 34</p>
+          </article>
+          <article class="cupom">
+            <p class="cupom__stamp">Sölo Sale</p>
+            <h3>All Star plataforma</h3>
+            <p class="cupom__de">de R$ 555,44 por</p>
+            <p class="cupom__por">R$ 333,26</p>
+            <p class="cupom__tam">34 · 36 · 38</p>
+          </article>
+          <article class="cupom">
+            <p class="cupom__stamp">Sölo Sale</p>
+            <h3>Reebok Club C</h3>
+            <p class="cupom__de">de R$ 777,67 por</p>
+            <p class="cupom__por">R$ 544,36</p>
+            <p class="cupom__tam">39 · 40</p>
+          </article>
+          <article class="cupom">
+            <p class="cupom__stamp">Sölo Sale</p>
+            <h3>Nike Daybreak</h3>
+            <p class="cupom__de">de R$ 666,65 por</p>
+            <p class="cupom__por">R$ 466,65</p>
+            <p class="cupom__tam">35 · 38</p>
+          </article>
+        </div>
+        <p class="sale__promos-nota">Peças únicas do estoque físico. Garanta a sua pelo WhatsApp ou nas lojas.</p>
+      </div>
+    </section>
+
+    <!-- Marcas -->
+    <section class="marcas revela" id="marcas" aria-labelledby="marcas-titulo">
+      <header class="secao__cab">
+        <p class="etiqueta">SÖLO.URB · MARCAS NA CASA</p>
+        <h2 id="marcas-titulo">Marcas que atravessam tendências</h2>
+        <p class="secao__sub">Vendidas e garantidas pela Sölo URB. Produtos originais, com nota.</p>
+      </header>
+      <div class="marcas__grade">
+        <a class="marca" href="#lancamentos">
+          <img src="assets/img/nb9060-beige.jpg" alt="New Balance 9060 cinza sobre fundo bege" loading="lazy">
+          <span class="marca__nome">New Balance</span>
+        </a>
+        <a class="marca" href="#lancamentos">
+          <img src="assets/img/puma-black-pink.jpg" alt="Puma Speedcat preto em detalhe" loading="lazy">
+          <span class="marca__nome">Puma</span>
+        </a>
+        <a class="marca" href="#lancamentos">
+          <img src="assets/img/lacoste-blue.jpg" alt="Tênis Lacoste branco sobre fundo azul" loading="lazy">
+          <span class="marca__nome">Lacoste</span>
+        </a>
+        <a class="marca" href="#lancamentos">
+          <img src="assets/img/converse-white.jpg" alt="Converse Chuck 70 branco" loading="lazy">
+          <span class="marca__nome">Converse</span>
+        </a>
+        <a class="marca" href="#maisvendidos">
+          <img src="assets/img/columbia-back.jpg" alt="Corta-vento Columbia azul e amarelo" loading="lazy">
+          <span class="marca__nome">Columbia</span>
+        </a>
+        <a class="marca" href="#maisvendidos">
+          <img src="assets/img/deus-reddoor.jpg" alt="Jaqueta Deus Ex Machina diante de porta vermelha" loading="lazy">
+          <span class="marca__nome">Deus Ex Machina</span>
+        </a>
+        <a class="marca" href="#relogios">
+          <img src="assets/img/casio-calc-gold.jpg" alt="Casio Vintage dourado com calculadora" loading="lazy">
+          <span class="marca__nome">Casio</span>
+        </a>
+        <a class="marca" href="#relogios">
+          <img src="assets/img/gshock-trio.jpg" alt="Três G-Shock de aço" loading="lazy">
+          <span class="marca__nome">G-Shock</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Relógios -->
+    <section class="relogios revela" id="relogios" aria-labelledby="rel-titulo">
+      <header class="secao__cab">
+        <p class="etiqueta etiqueta--clara">SÖLO.URB · CASIO · G-SHOCK</p>
+        <h2 id="rel-titulo">Pulso firme</h2>
+        <p class="secao__sub">A vitrine de relógios que fez a Sölo ficar conhecida: Casio vintage, mergulhadores e G-Shock em aço.</p>
+      </header>
+      <div class="grade grade--relogios" id="grade-relogios"></div>
+    </section>
+
+    <!-- Experiência Sölo -->
+    <section class="lojas revela" id="lojas" aria-labelledby="lojas-titulo">
+      <header class="secao__cab">
+        <p class="etiqueta">SÖLO.URB · MARINGÁ, PR</p>
+        <h2 id="lojas-titulo">A Sölo de perto</h2>
+        <p class="secao__sub">Duas lojas, atendimento de segunda a sábado. O site é a terceira vitrine.</p>
+      </header>
+      <div class="lojas__grade">
+        <figure class="lojas__foto">
+          <img src="assets/img/store-front-lifestyle.jpg" alt="Cliente em frente à fachada de vidro da Sölo URB" loading="lazy">
+        </figure>
+        <div class="lojas__info">
+          <article class="loja">
+            <h3>Loja 1 <span>Av. Herval, 128</span></h3>
+            <p>Centro, Maringá, PR<br>Segunda a sábado, 9h às 18h</p>
+            <a class="loja__mapa" href="https://maps.google.com/?q=Av.+Herval+128+Maringá" target="_blank" rel="noopener">Abrir no mapa ↗</a>
+          </article>
+          <article class="loja">
+            <h3>Loja 2 <span>Av. Tiradentes, 858</span></h3>
+            <p>Zona 1, Maringá, PR<br>Segunda a sábado, 9h às 18h</p>
+            <a class="loja__mapa" href="https://maps.google.com/?q=Av.+Tiradentes+858+Maringá" target="_blank" rel="noopener">Abrir no mapa ↗</a>
+          </article>
+        </div>
+        <figure class="lojas__foto lojas__foto--b">
+          <img src="assets/img/store-interior.jpg" alt="Interior da loja Sölo URB com araras de roupas" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="insta revela" aria-labelledby="insta-titulo">
+      <header class="secao__cab secao__cab--rail">
+        <div>
+          <p class="etiqueta">SÖLO.URB · NO INSTAGRAM</p>
+          <h2 id="insta-titulo">Na rua, no feed</h2>
+        </div>
+        <a class="insta__link" href="https://instagram.com/solo.urb" target="_blank" rel="noopener">Seguir @solo.urb ↗</a>
+      </header>
+      <div class="insta__faixa">
+        <a href="https://instagram.com/solo.urb" target="_blank" rel="noopener"><img src="assets/img/nb-grey-red.jpg" alt="Post: New Balance 9060 cinza sobre fundo vermelho" loading="lazy"></a>
+        <a href="https://instagram.com/solo.urb" target="_blank" rel="noopener"><img src="assets/img/saint-drop.jpg" alt="Post: campanha The Saint, novo drop" loading="lazy"></a>
+        <a href="https://instagram.com/solo.urb" target="_blank" rel="noopener"><img src="assets/img/lacoste-editorial.jpg" alt="Post: editorial Lacoste em preto e branco" loading="lazy"></a>
+        <a href="https://instagram.com/solo.urb" target="_blank" rel="noopener"><img src="assets/img/nb-purple.jpg" alt="Post: New Balance lilás sobre fundo verde" loading="lazy"></a>
+        <a href="https://instagram.com/solo.urb" target="_blank" rel="noopener"><img src="assets/img/nb-white-red.jpg" alt="Post: tênis branco sobre fundo vermelho" loading="lazy"></a>
+        <a href="https://instagram.com/solo.urb" target="_blank" rel="noopener"><img src="assets/img/solo-sneaker-jean.jpg" alt="Post: tênis suede segurando pela jardineira jeans" loading="lazy"></a>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="news revela" aria-labelledby="news-titulo">
+      <div class="news__caixa">
+        <p class="etiqueta etiqueta--clara">SÖLO.URB · ANTES DE TODO MUNDO</p>
+        <h2 id="news-titulo">Entre para a lista Sölo</h2>
+        <p>Lançamentos, reposições e seleções direto no seu e-mail, antes de todo mundo.</p>
+        <form class="news__form" data-news>
+          <label class="sr-only" for="news-email">Seu e-mail</label>
+          <input id="news-email" type="email" name="email" placeholder="seu@email.com" required autocomplete="email">
+          <button class="botao botao--primario" type="submit">Entrar na lista</button>
+        </form>
+        <p class="news__ok" data-news-ok hidden>Você está na lista. Boas escolhas chegando.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape__topo">
+      <a class="rodape__marca" href="#topo" aria-label="SÖLO URB — voltar ao topo">
+        <img src="assets/brand/logo.jpg" alt="" width="56" height="56">
+        <span>SÖLO<em>URB.</em></span>
+      </a>
+      <nav class="rodape__col" aria-label="Comprar">
+        <h3>Comprar</h3>
+        <a href="#lancamentos">Novidades</a>
+        <a href="#lancamentos">Tênis</a>
+        <a href="#maisvendidos">Roupas</a>
+        <a href="#relogios">Relógios</a>
+        <a href="#sale">Sale</a>
+      </nav>
+      <nav class="rodape__col" aria-label="A Sölo">
+        <h3>A Sölo</h3>
+        <a href="#lojas">Nossas lojas</a>
+        <a href="https://instagram.com/solo.urb" target="_blank" rel="noopener">Instagram</a>
+        <a href="#">Fale com a gente</a>
+        <a href="#">Trabalhe conosco</a>
+      </nav>
+      <nav class="rodape__col" aria-label="Ajuda">
+        <h3>Ajuda</h3>
+        <a href="#">Trocas e devoluções</a>
+        <a href="#">Entregas e prazos</a>
+        <a href="#">Guia de medidas</a>
+        <a href="#">Política de privacidade</a>
+        <a href="#">Termos de compra</a>
+      </nav>
+      <div class="rodape__col">
+        <h3>Pagamento</h3>
+        <p class="rodape__pag">Pix · Cartões em até 12x · 5% off no Pix</p>
+        <h3>Atendimento</h3>
+        <p class="rodape__pag">Segunda a sábado, 9h às 18h<br>Maringá, PR</p>
+      </div>
+    </div>
+    <div class="rodape__base">
+      <p>© 2026 Sölo URB · Produtos originais selecionados pela Sölo. CNPJ 00.000.000/0000-00</p>
+      <p>Av. Herval, 128 · Av. Tiradentes, 858 · Maringá, PR</p>
+    </div>
+  </footer>
+
+  <!-- SAC: WhatsApp -->
+  <a class="sac-whats" href="https://wa.me/5544999999999" target="_blank" rel="noopener" aria-label="Fale com a Sölo no WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+
+  <!-- Barra de condições fixa no rodapé da tela -->
+  <div class="beneficios-bar" role="status" aria-label="Condições da loja">
+    <div class="beneficios-bar__faixa" aria-hidden="true">
+      <span>Frete grátis 599,90</span><i>↓</i><span>Até 12x</span><i>↓</i><span>5% off Pix</span><i>↓</i><span>Frete grátis 599,90</span><i>↓</i><span>Até 12x</span><i>↓</i><span>5% off Pix</span><i>↓</i><span>Frete grátis 599,90</span><i>↓</i><span>Até 12x</span><i>↓</i><span>5% off Pix</span><i>↓</i><span>Frete grátis 599,90</span><i>↓</i><span>Até 12x</span><i>↓</i><span>5% off Pix</span><i>↓</i>
+      <span>Frete grátis 599,90</span><i>↓</i><span>Até 12x</span><i>↓</i><span>5% off Pix</span><i>↓</i><span>Frete grátis 599,90</span><i>↓</i><span>Até 12x</span><i>↓</i><span>5% off Pix</span><i>↓</i><span>Frete grátis 599,90</span><i>↓</i><span>Até 12x</span><i>↓</i><span>5% off Pix</span><i>↓</i><span>Frete grátis 599,90</span><i>↓</i><span>Até 12x</span><i>↓</i><span>5% off Pix</span><i>↓</i>
+    </div>
+    <p class="sr-only">Frete grátis acima de R$ 599,90. Parcelamento em até 12x. 5% de desconto no Pix.</p>
+    <button class="beneficios-bar__fechar" type="button" aria-label="Fechar barra de condições">
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <!-- Gaveta lateral: sacola e favoritos -->
+  <div class="gaveta-fundo" data-gaveta-fundo hidden></div>
+  <aside class="gaveta" data-gaveta role="dialog" aria-modal="true" aria-labelledby="gaveta-titulo" hidden>
+    <header class="gaveta__cab">
+      <h2 class="gaveta__titulo" id="gaveta-titulo" data-gaveta-titulo>Sacola</h2>
+      <button class="gaveta__fechar" type="button" data-gaveta-fechar aria-label="Fechar painel">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </header>
+    <div class="gaveta__corpo" data-gaveta-corpo></div>
+    <footer class="gaveta__rodape" data-gaveta-rodape hidden></footer>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
