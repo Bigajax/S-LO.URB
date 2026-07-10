@@ -371,4 +371,9 @@ document.addEventListener('DOMContentLoaded', () => {
     form.hidden = true;
     document.querySelector('[data-news-ok]').hidden = false;
   });
+
+  /* ----- Hero no touch: seta de swipe some no primeiro toque ----- */
+  const paineis = document.querySelector('.hero__paineis');
+  const dica = document.querySelector('.hero__dica');
+  paineis?.addEventListener('scroll', () => dica?.classList.add('hero__dica--some'), { once: true, passive: true });
 });
