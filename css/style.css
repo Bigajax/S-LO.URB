@@ -174,7 +174,13 @@ body { padding-bottom: calc(30px + env(safe-area-inset-bottom)); }
   white-space: nowrap;
   animation: rolagem 48s linear infinite;
 }
-.beneficios-bar__faixa i { font-style: normal; opacity: 0.45; }
+/* separador: o ponto vermelho, assinatura da casa, em miniatura */
+.beneficios-bar__faixa i {
+  font-style: normal;
+  font-size: 0.55em;
+  color: var(--vermelho);
+  opacity: 0.9;
+}
 .beneficios-bar__fechar {
   position: absolute;
   right: 0; top: 0; bottom: 0;
@@ -590,6 +596,8 @@ body { padding-bottom: calc(30px + env(safe-area-inset-bottom)); }
   transition: transform 0.45s ease;
 }
 .card:hover .card__media img { transform: scale(1.045); }
+/* botão sempre rente à base do card, alinhado entre vizinhos da mesma linha */
+.card .card__add { margin-top: auto; }
 
 .selo {
   position: absolute;
@@ -1234,7 +1242,8 @@ body { padding-bottom: calc(30px + env(safe-area-inset-bottom)); }
   position: fixed;
   top: 0; right: 0; bottom: 0;
   z-index: 95;
-  width: min(430px, 100vw);
+  /* no mobile fica entreaberta: o e-commerce aparece atrás do fundo escurecido */
+  width: min(430px, 88vw);
   display: flex;
   flex-direction: column;
   background: var(--branco);
@@ -1443,6 +1452,14 @@ body { padding-bottom: calc(30px + env(safe-area-inset-bottom)); }
     scroll-snap-align: start;
   }
 
+  /* lojas: no mobile fica a foto do interior (a menina), acima das infos */
+  .lojas__foto { display: none; }
+  .lojas__foto--b { display: block; order: -1; }
+
+  /* rodapé: logo ocupa a linha inteira, colunas abaixo */
+  .rodape__marca { grid-column: 1 / -1; }
+  .rodape__base { flex-direction: column; gap: 0.4rem; }
+
   .empena { min-height: 480px; }
 
   .sale { grid-template-columns: 1fr; }
@@ -1460,7 +1477,6 @@ body { padding-bottom: calc(30px + env(safe-area-inset-bottom)); }
   .sac-whats { width: 48px; height: 48px; right: 12px; bottom: 50px; }
 
   .lojas__grade { grid-template-columns: 1fr; }
-  .lojas__foto--b { display: none; }
 
   .insta__faixa { grid-template-columns: repeat(3, 1fr); }
 
