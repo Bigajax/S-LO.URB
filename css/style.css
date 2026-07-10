@@ -801,7 +801,7 @@ body { padding-bottom: calc(30px + env(safe-area-inset-bottom)); }
 .empena__fundo {
   position: absolute;
   inset: -14% 0;
-  background-image: url('../assets/img/nb-boxes-full.jpg');
+  background-image: url('../assets/img/nb-boxes-full.webp');
   background-size: cover;
   background-position: center 26%;
   will-change: transform;

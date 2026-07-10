@@ -5,42 +5,42 @@
 const PRODUTOS = {
   /* Só tênis: é o destino do card "Tênis" das categorias */
   lancamentos: [
-    { id: 'nb-9060-blk',   marca: 'New Balance', nome: '9060 Black Castlerock',   preco: 129900, selo: 'novo',      img: 'assets/img/hero-nb9060.jpg',    tamanhos: [38, 39, 40, 41, 42, 43] },
-    { id: 'nb-530-wht',    marca: 'New Balance', nome: '530 White Silver',        preco: 74900,  selo: 'novo',      img: 'assets/img/nb530-warm.jpg',     tamanhos: [35, 36, 37, 38, 39, 40] },
-    { id: 'puma-speed-bg', marca: 'Puma',        nome: 'Speedcat OG Suede',       preco: 59900,  selo: 'novo',      img: 'assets/img/puma-suede-pink.jpg', tamanhos: [35, 36, 37, 38, 39] },
-    { id: 'nb-9060-wht',   marca: 'New Balance', nome: '9060 Triple White',       preco: 129900, selo: 'novo',      img: 'assets/img/nb-white-red.jpg',   tamanhos: [35, 36, 37, 38, 39, 40, 41] },
-    { id: 'lacoste-l003',  marca: 'Lacoste',     nome: 'L003 Neo Off-White',      preco: 89900,  selo: null,        img: 'assets/img/lacoste-cream.jpg',  tamanhos: [39, 40, 41, 42, 43] },
-    { id: 'nb-9060-sea',   marca: 'New Balance', nome: '9060 Sea Salt',           preco: 129900, selo: 'novo',      img: 'assets/img/nb9060-stack.jpg',   tamanhos: [37, 38, 39, 40, 41] },
-    { id: 'converse-ct70', marca: 'Converse',    nome: 'Chuck 70 Hi Parchment',   preco: 44900,  selo: null,        img: 'assets/img/converse-white.jpg', tamanhos: [34, 35, 36, 37, 38, 39, 40] },
-    { id: 'puma-speed-sd', marca: 'Puma',        nome: 'Speedcat Suede Sand',     preco: 59900,  selo: null,        img: 'assets/img/puma-beige-blue.jpg', tamanhos: [34, 35, 36, 37, 38] },
+    { id: 'nb-9060-blk',   marca: 'New Balance', nome: '9060 Black Castlerock',   preco: 129900, selo: 'novo',      img: 'assets/img/hero-nb9060.webp',    tamanhos: [38, 39, 40, 41, 42, 43] },
+    { id: 'nb-530-wht',    marca: 'New Balance', nome: '530 White Silver',        preco: 74900,  selo: 'novo',      img: 'assets/img/nb530-warm.webp',     tamanhos: [35, 36, 37, 38, 39, 40] },
+    { id: 'puma-speed-bg', marca: 'Puma',        nome: 'Speedcat OG Suede',       preco: 59900,  selo: 'novo',      img: 'assets/img/puma-suede-pink.webp', tamanhos: [35, 36, 37, 38, 39] },
+    { id: 'nb-9060-wht',   marca: 'New Balance', nome: '9060 Triple White',       preco: 129900, selo: 'novo',      img: 'assets/img/nb-white-red.webp',   tamanhos: [35, 36, 37, 38, 39, 40, 41] },
+    { id: 'lacoste-l003',  marca: 'Lacoste',     nome: 'L003 Neo Off-White',      preco: 89900,  selo: null,        img: 'assets/img/lacoste-cream.webp',  tamanhos: [39, 40, 41, 42, 43] },
+    { id: 'nb-9060-sea',   marca: 'New Balance', nome: '9060 Sea Salt',           preco: 129900, selo: 'novo',      img: 'assets/img/nb9060-stack.webp',   tamanhos: [37, 38, 39, 40, 41] },
+    { id: 'converse-ct70', marca: 'Converse',    nome: 'Chuck 70 Hi Parchment',   preco: 44900,  selo: null,        img: 'assets/img/converse-white.webp', tamanhos: [34, 35, 36, 37, 38, 39, 40] },
+    { id: 'puma-speed-sd', marca: 'Puma',        nome: 'Speedcat Suede Sand',     preco: 59900,  selo: null,        img: 'assets/img/puma-beige-blue.webp', tamanhos: [34, 35, 36, 37, 38] },
   ],
 
   /* Só confecção: destino do card "Roupas" e do painel "Streetwear" do hero */
   roupas: [
-    { id: 'deus-shirt',      marca: 'Deus Ex Machina', nome: 'Camisa Workwear Address', preco: 54900, selo: null,   img: 'assets/img/deus-workshirt.jpg', tamanhos: ['P', 'M', 'G', 'GG'] },
-    { id: 'columbia-anorak', marca: 'Columbia',        nome: 'Anorak Challenger',       preco: 79900, selo: 'novo', img: 'assets/img/columbia-blue.jpg',  tamanhos: ['P', 'M', 'G', 'GG'] },
-    { id: 'deus-hood',       marca: 'Deus Ex Machina', nome: 'Moletom São Paulo',       preco: 64900, selo: null,   img: 'assets/img/deus-hoodie.jpg',    tamanhos: ['P', 'M', 'G', 'GG'] },
-    { id: 'tee-madeni',      marca: 'Seleção Sölo',    nome: 'Camiseta Gráfica Off',    preco: 19900, selo: null,   img: 'assets/img/tee-graphic-off.jpg', tamanhos: ['P', 'M', 'G'] },
+    { id: 'deus-shirt',      marca: 'Deus Ex Machina', nome: 'Camisa Workwear Address', preco: 54900, selo: null,   img: 'assets/img/deus-workshirt.webp', tamanhos: ['P', 'M', 'G', 'GG'] },
+    { id: 'columbia-anorak', marca: 'Columbia',        nome: 'Anorak Challenger',       preco: 79900, selo: 'novo', img: 'assets/img/columbia-blue.webp',  tamanhos: ['P', 'M', 'G', 'GG'] },
+    { id: 'deus-hood',       marca: 'Deus Ex Machina', nome: 'Moletom São Paulo',       preco: 64900, selo: null,   img: 'assets/img/deus-hoodie.webp',    tamanhos: ['P', 'M', 'G', 'GG'] },
+    { id: 'tee-madeni',      marca: 'Seleção Sölo',    nome: 'Camiseta Gráfica Off',    preco: 19900, selo: null,   img: 'assets/img/tee-graphic-off.webp', tamanhos: ['P', 'M', 'G'] },
   ],
 
   maisVendidos: [
-    { id: 'nb-530-bed',      marca: 'New Balance', nome: '530 White Natural',     preco: 74900,  selo: 'maisvendido', img: 'assets/img/nb530-bed.jpg',      tamanhos: [34, 35, 36, 37, 38, 39] },
-    { id: 'casio-vintage',   marca: 'Casio',       nome: 'Vintage CA-53 Dourado', preco: 39900,  selo: 'maisvendido', img: 'assets/img/casio-calc-gold.jpg', tamanhos: null },
-    { id: 'nb-990-blk',      marca: 'New Balance', nome: '990 Black Grey',        preco: 169900, selo: 'maisvendido', img: 'assets/img/nb-premium-black.jpg', tamanhos: [39, 40, 41, 42, 43, 44] },
-    { id: 'puma-speed-bk',   marca: 'Puma',        nome: 'Speedcat OG Black',     preco: 59900,  selo: null,          img: 'assets/img/puma-black-pink.jpg', tamanhos: [38, 39, 40, 41, 42] },
-    { id: 'lacoste-court',   marca: 'Lacoste',     nome: 'Court Cage Off-White',  preco: 79900,  selo: null,          img: 'assets/img/lacoste-blue.jpg',   tamanhos: [38, 39, 40, 41, 42] },
-    { id: 'casio-mesh',      marca: 'Casio',       nome: 'AQ-800 Mesh Prata',     preco: 34900,  selo: 'maisvendido', img: 'assets/img/casio-mesh.jpg',     tamanhos: null },
-    { id: 'nb-9060-grey',    marca: 'New Balance', nome: '9060 Rain Cloud',       preco: 129900, selo: 'ultimas',     img: 'assets/img/nb9060-grey-hand.jpg', tamanhos: [40, 41, 42] },
-    { id: 'casio-a158-gold', marca: 'Casio',       nome: 'Vintage A158 Dourado',  preco: 44900,  selo: null,          img: 'assets/img/gold-casios.jpg',    tamanhos: null },
+    { id: 'nb-530-bed',      marca: 'New Balance', nome: '530 White Natural',     preco: 74900,  selo: 'maisvendido', img: 'assets/img/nb530-bed.webp',      tamanhos: [34, 35, 36, 37, 38, 39] },
+    { id: 'casio-vintage',   marca: 'Casio',       nome: 'Vintage CA-53 Dourado', preco: 39900,  selo: 'maisvendido', img: 'assets/img/casio-calc-gold.webp', tamanhos: null },
+    { id: 'nb-990-blk',      marca: 'New Balance', nome: '990 Black Grey',        preco: 169900, selo: 'maisvendido', img: 'assets/img/nb-premium-black.webp', tamanhos: [39, 40, 41, 42, 43, 44] },
+    { id: 'puma-speed-bk',   marca: 'Puma',        nome: 'Speedcat OG Black',     preco: 59900,  selo: null,          img: 'assets/img/puma-black-pink.webp', tamanhos: [38, 39, 40, 41, 42] },
+    { id: 'lacoste-court',   marca: 'Lacoste',     nome: 'Court Cage Off-White',  preco: 79900,  selo: null,          img: 'assets/img/lacoste-blue.webp',   tamanhos: [38, 39, 40, 41, 42] },
+    { id: 'casio-mesh',      marca: 'Casio',       nome: 'AQ-800 Mesh Prata',     preco: 34900,  selo: 'maisvendido', img: 'assets/img/casio-mesh.webp',     tamanhos: null },
+    { id: 'nb-9060-grey',    marca: 'New Balance', nome: '9060 Rain Cloud',       preco: 129900, selo: 'ultimas',     img: 'assets/img/nb9060-grey-hand.webp', tamanhos: [40, 41, 42] },
+    { id: 'casio-a158-gold', marca: 'Casio',       nome: 'Vintage A158 Dourado',  preco: 44900,  selo: null,          img: 'assets/img/gold-casios.webp',    tamanhos: null },
   ],
 
   relogios: [
-    { id: 'gshock-trio',   marca: 'G-Shock', nome: 'Linha GM Steel',          preco: 129900, selo: null,        img: 'assets/img/gshock-trio.jpg' },
-    { id: 'casio-diver',   marca: 'Casio',   nome: 'Duro Marlin Green Dial',  preco: 49900,  selo: 'selecao',   img: 'assets/img/watch-green-dark.jpg' },
-    { id: 'gshock-gm2100', marca: 'G-Shock', nome: 'GM-2100 Full Metal',      preco: 149900, selo: 'exclusivo', img: 'assets/img/gshock-hand.jpg' },
-    { id: 'casio-aq800',   marca: 'Casio',   nome: 'AQ-800 Blue Steel',       preco: 34900,  selo: null,        img: 'assets/img/casio-green-denim.jpg' },
-    { id: 'casio-duro-vd', marca: 'Casio',   nome: 'Duro Marlin Verde',       preco: 49900,  selo: 'selecao',   img: 'assets/img/watch-orange.jpg' },
-    { id: 'casio-duo',     marca: 'Casio',   nome: 'Vintage Duo Prata',       preco: 32900,  selo: null,        img: 'assets/img/wrists-duo.jpg' },
+    { id: 'gshock-trio',   marca: 'G-Shock', nome: 'Linha GM Steel',          preco: 129900, selo: null,        img: 'assets/img/gshock-trio.webp' },
+    { id: 'casio-diver',   marca: 'Casio',   nome: 'Duro Marlin Green Dial',  preco: 49900,  selo: 'selecao',   img: 'assets/img/watch-green-dark.webp' },
+    { id: 'gshock-gm2100', marca: 'G-Shock', nome: 'GM-2100 Full Metal',      preco: 149900, selo: 'exclusivo', img: 'assets/img/gshock-hand.webp' },
+    { id: 'casio-aq800',   marca: 'Casio',   nome: 'AQ-800 Blue Steel',       preco: 34900,  selo: null,        img: 'assets/img/casio-green-denim.webp' },
+    { id: 'casio-duro-vd', marca: 'Casio',   nome: 'Duro Marlin Verde',       preco: 49900,  selo: 'selecao',   img: 'assets/img/watch-orange.webp' },
+    { id: 'casio-duo',     marca: 'Casio',   nome: 'Vintage Duo Prata',       preco: 32900,  selo: null,        img: 'assets/img/wrists-duo.webp' },
   ],
 };
 
