@@ -1225,6 +1225,8 @@ body { padding-bottom: calc(30px + env(safe-area-inset-bottom)); }
   font-size: 0.68rem;
   color: var(--aco-escuro);
 }
+.rodape__base a { text-decoration: none; }
+.rodape__base a:hover { color: var(--branco); text-decoration: underline; }
 
 /* ---------- Gaveta lateral: sacola e favoritos ---------- */
 
